@@ -34,3 +34,4 @@ kafka:
       confluent.metrics.reporter.topic.replicas: 3
       ssl.endpoint.identification.algorithm: ""
       confluent.metrics.reporter.ssl.endpoint.identification.algorithm: ""
+      delete.topic.enable: "true"
