@@ -7,7 +7,7 @@ confluent:
       service_name: confluent-control-center
       systemd_override: /etc/systemd/system/confluent-control-center.service.d
       environment:
-        CONTROL_CENTER_HEAP_OPTS: "-Xmx6g  -XX:ParallelGCThreads=4"
+        CONTROL_CENTER_HEAP_OPTS: "-Xmx6g  -XX:ParallelGCThreads=2"
       config:
         confluent.controlcenter.streams.num.stream.threads: 8
         confluent.controlcenter.data.dir: /var/lib/confluent/control-center
